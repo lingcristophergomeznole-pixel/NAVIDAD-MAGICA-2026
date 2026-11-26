@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b16">
+  <meta name="description" content="Navidad Mágica 2026: un mundo lleno de ilusión, amor y esperanza.">
+  <title>Navidad Mágica 2026 🎄</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div class="top-lights" aria-hidden="true"><span>✦</span><span>●</span><span>✦</span><span>●</span><span>✦</span><span>●</span><span>✦</span><span>●</span><span>✦</span></div>
+
+  <nav class="navbar">
+    <a class="brand" href="#inicio">🎄 Navidad Mágica</a>
+    <div class="nav-actions">
+      <a href="#cuenta">Cuenta regresiva</a>
+      <a href="#sorpresas">Sorpresas</a>
+      <button id="themeBtn" class="icon-btn" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+      <button id="musicBtn" class="icon-btn" aria-label="Activar música" title="Activar música">🎵</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">✨ UNA ÉPOCA PARA COMPARTIR ✨</p>
+        <h1>Navidad <span>Mágica</span><br><small>2026</small></h1>
+        <p class="intro">Un mundo lleno de ilusión, amor y esperanza.<br>Que la magia de la Navidad ilumine cada hogar.</p>
+        <a class="primary-btn" href="#sorpresas">Descubre la magia <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de árbol de Navidad">
+        <div class="moon"></div>
+        <div class="star star-one">✦</div><div class="star star-two">✧</div><div class="star star-three">✦</div>
+        <div class="tree">
+          <div class="tree-star">★</div>
+          <div class="tree-layer layer-one"></div>
+          <div class="tree-layer layer-two"></div>
+          <div class="tree-layer layer-three"></div>
+          <div class="trunk"></div>
+          <i class="ornament o1"></i><i class="ornament o2"></i><i class="ornament o3"></i><i class="ornament o4"></i><i class="ornament o5"></i>
+          <i class="garland g1"></i><i class="garland g2"></i>
+        </div>
+        <div class="snow-ground"></div>
+        <div class="santa-float">🎅</div>
+        <div class="gift gift-a">🎁</div><div class="gift gift-b">🎁</div>
+      </div>
+    </section>
+
+    <section class="count-section section" id="cuenta">
+      <p class="eyebrow">EL MOMENTO MÁS ESPERADO</p>
+      <h2>La Navidad está llegando</h2>
+      <p class="muted">Falta muy poco para celebrar juntos.</p>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">000</strong><span>DÍAS</span></div>
+        <div><strong id="hours">00</strong><span>HORAS</span></div>
+        <div><strong id="minutes">00</strong><span>MINUTOS</span></div>
+        <div><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+      </div>
+      <p class="date-note">🎄 25 de diciembre de 2026 🎄</p>
+    </section>
+
+    <section class="section surprises" id="sorpresas">
+      <p class="eyebrow">PEQUEÑOS MOMENTOS, GRANDES EMOCIONES</p>
+      <h2>La magia está en compartir</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🎁</div>
+          <h3>Un regalo para ti</h3>
+          <p>Abre tu sorpresa y recibe un deseo especial.</p>
+          <button class="secondary-btn gift-btn" data-message="Que nunca te falten motivos para sonreír. ¡Feliz Navidad! 🎁">Abrir regalo</button>
+        </article>
+        <article class="card">
+          <div class="card-icon">💌</div>
+          <h3>Una carta especial</h3>
+          <p>Un mensaje lleno de cariño para esta Navidad.</p>
+          <button class="secondary-btn" id="letterBtn">Leer carta</button>
+        </article>
+        <article class="card">
+          <div class="card-icon">⭐</div>
+          <h3>Un deseo mágico</h3>
+          <p>Que la paz y la esperanza acompañen tu camino.</p>
+          <button class="secondary-btn" id="wishBtn">Pedir un deseo</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-mark">“</div>
+      <p>La Navidad no se trata solo de abrir regalos,<br> sino de abrir el corazón.</p>
+      <span>Con cariño, Navidad Mágica 2026</span>
+    </section>
+  </main>
+
+  <footer>
+    <div>🎄 <strong>Navidad Mágica 2026</strong></div>
+    <p>Que la alegría, el amor y la paz vivan siempre en tu hogar. ❤️</p>
+    <small>Hecho con ilusión y espíritu navideño.</small>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="close-btn" id="closeModal" aria-label="Cerrar">×</button>
+      <div class="modal-icon" id="modalIcon">💌</div>
+      <h2 id="modalTitle">Un mensaje para ti</h2>
+      <p id="modalText"></p>
+      <button class="primary-btn" id="modalOk">¡Gracias!</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
